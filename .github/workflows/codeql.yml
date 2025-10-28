@@ -87,7 +87,6 @@ jobs:
       shell: bash
       run: |
         ./mvnw -ntp verify -DskipTests --batch-mode -Pprod
-        exit 1
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v4
